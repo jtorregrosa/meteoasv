@@ -1,0 +1,45 @@
+:host {
+    display: block;
+}
+
+.precipitation-probability-widget {
+    &__itemlist {
+        list-style: none;
+        margin-left: 0;
+        padding-left: 0;
+        display: flex;
+        flex-flow: row wrap;
+        color: #888;
+    }
+
+    &__item {
+        display: inline-block;
+        text-align: center;
+        flex: 1 1;
+
+        &:last-child .precipitation-probability-widget__period{
+            border-right: 1px solid #ddd;
+        }
+    }
+    
+    &__value {
+        display: block;
+        font-size: 1.2rem;
+        padding: 1rem;
+    }
+
+    &__separator {
+        display: block;
+        border-bottom: 2px solid;
+        border-color: #ddd;
+    }
+
+    &__period {
+        display: block;
+        font-size: 0.8em;
+        padding: 0 1rem;
+        margin-top: 0.2rem;
+        border-left: 1px solid #ddd;
+    }
+    
+}

@@ -1,0 +1,15 @@
+<section class="forecast-widget">
+    <div class="forecast-widget__location">
+        <span class="forecast-widget__title">{{municipality.name}}</span>
+        <span class="forecast-widget__subtitle">{{tomorrow | date}}</span>
+    </div>
+
+    <app-temperature-widget
+        class="forecast-widget__temperature-widget"
+        [value]="forecast.temperatureAverage"
+        [unit]="parseTemperatureUnit(forecast.temperatureUnit)"></app-temperature-widget>
+
+    <app-precipitation-probability-widget
+        class="forecast-widget__precipitation-probability-widget"
+        [data]="forecast.precipitationProbabilities"></app-precipitation-probability-widget>
+</section>

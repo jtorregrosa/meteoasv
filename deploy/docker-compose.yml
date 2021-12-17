@@ -1,0 +1,20 @@
+version: '3.7'
+
+services:
+  meteoasv-frontend:
+    image: jtorregrosa/meteoasv-frontend:0.0.1-SNAPSHOT
+    env_file: ./environments/meteoasv-frontend.env
+    networks:
+      - meteoasv
+    ports:
+      - "8081:80"
+  meteoasv-api:
+    image: jtorregrosa/meteoasv-api:0.0.1-SNAPSHOT
+    env_file: ./environments/meteoasv-api.env
+    networks:
+      - meteoasv
+    ports:
+      - "8080:8080"
+
+networks:
+  meteoasv:

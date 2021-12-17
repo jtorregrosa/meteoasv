@@ -1,0 +1,36 @@
+<div class="home">
+  <div>
+    <div>
+      <mat-card class="home__weather-card">
+        <mat-card-content>
+          <form class="home__filter-form">
+            <mat-form-field class="home__municipality-field">
+              <input matInput placeholder="Municipality" class="form-control" [formControl]="municipalityFilterInput" [matAutocomplete]="auto">
+              <mat-autocomplete #auto="matAutocomplete">
+                <mat-option *ngFor="let municipality of filteredMunicipalities | async" [value]="municipality.name">
+                    <span>{{municipality.name}}</span>
+                </mat-option>
+              </mat-autocomplete>
+            </mat-form-field>
+            <button mat-button (click)="search()"><mat-icon >search</mat-icon></button>
+
+            <mat-form-field class="home__unit-field">
+              <mat-label>Unit</mat-label>
+              <mat-select [(value)]="selectedUnit">
+                <mat-option *ngFor="let unit of availableUnits" [value]="unit">
+                  <span>{{unit.displayName}}</span>
+                </mat-option>
+              </mat-select>
+
+            </mat-form-field>
+          </form>
+          <div *ngIf="model$ | async as model">
+            <app-weather-forecast-widget [forecast]="model.forecast" [municipality]="model.municipality" [unit]="selectedUnit.displayName"></app-weather-forecast-widget>
+          </div>
+
+        </mat-card-content>
+        <mat-card-footer></mat-card-footer>
+      </mat-card>
+    </div>
+  </div>
+</div>

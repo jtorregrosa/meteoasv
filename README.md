@@ -45,11 +45,13 @@ _Below is an example of how you can instruct your audience on installing and set
   APPLICATION_AEMET_APIKEY=YOUR_AEMET_API_KEY
   ```
 
-4. Run and evaluate this test with mercy =)
+4. Run the whole stack.
 
   ```sh
   $ docker compose -f deploy/docker-compose.yml up
   ```
+
+5. Access [http://localhost:8081](http://localhost:8081) and evaluate this test with mercy =)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 

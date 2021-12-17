@@ -23,14 +23,11 @@ ARG LABEL_BUILD_CREATED="n/a"
 ARG LABEL_IMAGE_VERSION="n/a"
 ARG LABEL_REVISION="n/a"
 
-LABEL org.opencontainers.image.authors='J. Torregrosa <jtorregrosa@nouss.eu>'
-LABEL org.opencontainers.image.url='https://noussintelligence.com'
-LABEL org.opencontainers.image.documentation='https://nouss.visualstudio.com/nouss-team-cloud/_git/nouss-docker-services?path=/ionic-build-base/README.md'
-LABEL org.opencontainers.image.source='https://nouss.visualstudio.com/nouss-team-cloud/_git/nouss-docker-services'
-LABEL org.opencontainers.image.vendor='Nouss Intelligence S.L.'
-LABEL org.opencontainers.image.licenses='SEE LICENSE IN /LICENSE.MD'
-LABEL org.opencontainers.image.created=$LABEL_BUILD_CREATED
-LABEL org.opencontainers.image.version=$LABEL_IMAGE_VERSION
-LABEL org.opencontainers.image.revision=$LABEL_REVISION
-LABEL org.opencontainers.image.title='IonicAndroidBuilder base image'
-LABEL org.opencontainers.image.description='This image base contains all required tools and dependencies to build & sign android artifacts'
+LABEL org.opencontainers.image.authors='J. Torregrosa <jtorregrosalloret@gmail.com>'
+LABEL org.opencontainers.image.url='https://github.com/jtorregrosa/meteoasv'
+LABEL org.opencontainers.image.documentation='https://github.com/jtorregrosa/meteoasv'
+LABEL org.opencontainers.image.source='https://github.com/jtorregrosa/meteoasv'
+LABEL org.opencontainers.image.vendor='Jorge Torregrosa Lloret'
+LABEL org.opencontainers.image.licenses='MIT'
+LABEL org.opencontainers.image.title='MeteoASV'
+LABEL org.opencontainers.image.description='This image contains all required executables to deploy the MeteoASV api'

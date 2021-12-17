@@ -73,20 +73,7 @@ Lapi/src/main/java/com/jtorregrosa/meteoasv/web/rest/errors/package-info.java,6
 -api/src/test/resources/config/application.yml,3\0\300261c53bdec7f90990971d439b181b4c10d7a4
 ƒ
 Sapi/src/main/java/com/jtorregrosa/meteoasv/web/rest/errors/ExceptionTranslator.java,7\1\71ffbbaeabe9004ae0fac4af02519534116678b0
-;
-api/pom.xml,f\e\fe5c43214168bd8de1d8afa275215a8e9b9de634
-H
-docker/jib/entrypoint.sh,d\e\de2e2a7700d5675dd72ba96487cd8f62913ffe48
 D
 docker-entrypoint.sh,c\f\cf679495cb58acd586634879fdec5e1b73d5250a
 =
 .dockerignore,0\5\05a721ebe3ba0754116825ed1359ff1785f4bbac
-:
-
-Dockerfile,6\6\6651ddff6eb82c840ced7c1dddee15c6e1913dd4
-H
-docker/elasticsearch.yml,6\1\61693dc1eedca97bdd0ec644ac0a80d92cd413c7
-E
-docker/monitoring.yml,8\7\875dce00718281e9e6aa020cce0725d9ed5ec39b
-@
-docker/sonar.yml,2\2\22edb279ba33a658163bb5b96587b47c58630888

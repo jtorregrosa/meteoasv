@@ -19,6 +19,7 @@
         <maven.version>3.3.9</maven.version>
         <node.version>v14.18.1</node.version>
         <npm.version>8.1.4</npm.version>
+        <apiguardian.version>1.1.2</apiguardian.version>
 
         <argLine>-Djava.security.egd=file:/dev/./urandom -Xmx256m</argLine>
         <m2e.apt.activation>jdt_apt</m2e.apt.activation>
@@ -55,6 +56,11 @@
 
     <dependencies>
         <dependency>
+            <groupId>org.apiguardian</groupId>
+            <artifactId>apiguardian-api</artifactId>
+            <version>${apiguardian.version}</version>
+        </dependency>
+        <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
             <version>${jackson.version}</version>
@@ -77,6 +83,12 @@
             <groupId>com.squareup.okhttp3</groupId>
             <artifactId>mockwebserver3-junit5</artifactId>
             <version>${mockwebserver-junit5.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.apiguardian</groupId>
+                    <artifactId>apiguardian-api</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>org.junit.jupiter</groupId>

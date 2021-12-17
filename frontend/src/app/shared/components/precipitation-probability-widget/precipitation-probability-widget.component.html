@@ -1,0 +1,9 @@
+<section class="precipitation-probability-widget">
+    <ul class="precipitation-probability-widget__itemlist">
+        <li class="precipitation-probability-widget__item" *ngFor="let precipitationProbability of data">
+            <span class="precipitation-probability-widget__value">{{precipitationProbability.probability}}%</span>
+            <span class="precipitation-probability-widget__separator"></span>
+            <span class="precipitation-probability-widget__period">{{precipitationProbability.period}}</span>
+        </li>
+    </ul>
+</section>

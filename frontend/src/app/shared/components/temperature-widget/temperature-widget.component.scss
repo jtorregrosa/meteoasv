@@ -1,0 +1,21 @@
+:host {
+    display: block;
+    text-align: center;
+}
+
+
+.temperature-widget {
+    display: inline-block;
+    vertical-align: top;
+
+
+    &__value {
+        font-size: 5rem;
+        line-height: normal;
+    }
+
+    &__unit {
+        font-size: 2.5rem;
+        line-height: normal;
+    }
+}

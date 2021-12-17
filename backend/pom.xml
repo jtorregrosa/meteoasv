@@ -1,0 +1,52 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd;">
+    <modelVersion>4.0.0</modelVersion>
+ 
+    <groupId>com.jtorregrosa.meteoasv</groupId>
+    <artifactId>parent-meteoasv</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <name>MeteoASV Parent</name>
+    <description>Technical Test for ASV Company</description>
+ 
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-dependencies</artifactId>
+        <version>2.5.7</version>
+        <relativePath />
+    </parent>
+
+    <properties>
+        <!-- Build properties -->
+        <java.version>11</java.version>
+        <maven.version>3.3.9</maven.version>
+        <node.version>v14.18.1</node.version>
+        <npm.version>8.1.4</npm.version>
+
+        <argLine>-Djava.security.egd=file:/dev/./urandom -Xmx256m</argLine>
+        <m2e.apt.activation>jdt_apt</m2e.apt.activation>
+        <maven.build.timestamp.format>yyyyMMddHHmmss</maven.build.timestamp.format>
+        <maven.compiler.source>${java.version}</maven.compiler.source>
+        <maven.compiler.target>${java.version}</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <run.addResources>false</run.addResources>
+    </properties>
+ 
+    <modules>
+        <module>api</module>
+        <module>aemet-client</module>
+    </modules>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <skip>true</skip>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

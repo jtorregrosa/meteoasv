@@ -1,0 +1,14 @@
+*
+!.mvn/**
+!aemet-client/**
+!api/**
+!mvnw
+!pom.xml
+!docker-entrypoint.sh
+.idea/
+*.iml
+*.iws
+target/
+.sonar/
+.sonarlint/
+docker/

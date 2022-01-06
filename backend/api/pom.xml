@@ -46,7 +46,7 @@
         <mapstruct.version>1.4.2.Final</mapstruct.version>
         <problem-spring-web.version>0.27.0</problem-spring-web.version>
         <spring-boot.version>2.5.7</spring-boot.version>
-        <spring-doc.version>1.5.13</spring-doc.version>
+        <spring-doc.version>1.6.4</spring-doc.version>
         <springfox.version>3.0.0</springfox.version>
 
         <!-- Plugin versions -->
